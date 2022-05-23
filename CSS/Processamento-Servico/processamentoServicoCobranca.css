@@ -1,0 +1,590 @@
+@media (min-width:0px){
+    .container__processo-concluido{
+        width: 100vw;
+        height: 165vh;
+        position: absolute;
+
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0,0,0,0.2);
+        
+    }
+    .processo-concluido{
+        width: 24.188rem;
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        padding-left: 4.261rem;
+        padding-right: 4.261rem;
+        padding-top: 2.635rem;
+        padding-bottom: 2.635rem;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+
+        animation-name: animatetop;
+        animation-duration: .4s
+    } 
+    .texto__concluido{
+        font-family: var(--mont-serrat);
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--primary);
+        text-align: center;
+    }
+    .botao__fecha-concluido{
+        background-color: transparent;
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 6.063rem;
+    }
+    
+    .icone__concluido{
+        width: 8.231rem;
+    }
+    body{
+        background-color: #F8FBFF;
+    }
+    #body{
+        overflow-y: hidden;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 6.938rem;
+        width: 100vw;
+
+        background-color: #FFFFFF;
+
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .container-pesquisa{
+        padding-right: 12.103rem;
+        padding-left: 3.724rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 39.813rem;
+        height: 3.25rem;
+
+        border: none;
+        border-radius: .5rem;
+
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+
+        padding: 1rem 0 1rem 3.5rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.25rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+    }
+    
+    .intro__processamento-servico{
+        font-family: var(--mont-serrat);
+        margin-left: 1rem;
+    }
+    .paginacao__processamento-servico{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-edi{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    .processamento-servico{
+        padding: 2rem 0 1rem 2rem
+    }
+    .secao__processamento-servico{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 3.438rem;
+    }
+
+    .cabecalho__processamento-servico{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 1.482rem;
+    }
+
+    .tablinks{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .filtros__cobranca, .resultado__pesquisa, .filtros__pagamento{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.5rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .titulo__filtro{
+        font-family: var(--mont-serrat);
+        font-size: 18px;
+        color: var(--primary);
+
+        margin-bottom: 1.438rem;
+    }
+    .secao-1__filtros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        font-family: var(--mont-serrat);
+
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .container__input___filtro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label__filtro{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+
+        margin-bottom: .25rem;
+    }
+    .input__filtro{
+        height: 3.063rem;
+        width: 41.9vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+    .input__filtro:focus{
+        outline: 1px solid var(--primary-support);
+    }
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: calc(100% - 1rem);
+        background-position-y: 1.3rem;
+        border: 1px solid #333;
+        padding-right: 20px;
+    }
+
+    select:focus{
+        outline: none;
+    }
+    .option__filtro{
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .secao-2__filtros{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #EEEEEE;
+
+        font-family: var(--mont-serrat);
+    }
+    .container__radio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-top: 1rem;
+    }
+    .input-radio{
+        width: 19px;
+        height: 19px;
+    }
+    .label__radio{
+        margin-right: 1rem;
+        margin-left: .5rem;
+
+        color: #7A8594;
+        font-size: 14px;
+    }
+    .container__input-titulo{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+    .input__filtro-data{
+        width: 21.3vw;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+    .input__filtro-data::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+    .input__filtro-data:focus, .input__filtro-small:focus, .input__filtro___pagamento:focus{
+        outline: none;
+    }
+
+    .secao-3__filtros{
+        display: flex;
+        flex-direction: row;
+
+        font-family: var(--mont-serrat);
+    }
+
+    .container__input-titulo___secao-3{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .input__filtro-small{
+        width: 19.9vw;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594; 
+    }
+    .input__filtro-small:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .botoes__form{
+        display: flex;
+        align-items: flex-end;
+        font-family: var(--mont-serrat);
+    }
+    .botao-limpar{
+        width: 7.75rem;
+        height: 3.5rem;
+
+        background-color: transparent;
+        color: var(--primary);
+        padding: 1rem 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+    }
+    .botao-pesquisa{
+        width: 9.125rem;
+        height: 3.5rem;
+
+        background-color: var(--primary-support);
+        color: #FFFFFF;
+        padding: 1rem 2rem;
+
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+    }
+    .resultado__pesquisa{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        transition: all .4s ease-in-out;
+        animation-name: animatetop;
+        animation-duration: .4s;
+        position:relative;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color: #173A67 transparent;
+        scrollbar-width: thin;
+    }
+    .clientes{
+        margin-bottom: 3rem;
+    }
+    .info__resultado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+
+        font-family: var(--mont-serrat);
+
+        width: 79.75rem;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+        
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .info__selecionar{
+        width: 8.75rem;
+    }
+    .info__cliente{
+        width: 17.938rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4rem;
+    }
+    .info__duplicatas{
+        width: 7.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.8rem;
+    }
+    .info__prestacao{
+        width: 7.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.2rem;
+    }
+    .info__data-vencimento{
+        width: 14.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 8.7rem;
+    }
+    .info__valor{
+        width: 7.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.2rem;
+    }
+
+    .secao-1{
+        display: flex;
+        gap: 5rem;
+    }
+    .secao-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2rem;
+        margin-left: 16vw;
+    }
+    
+
+    .clientes{
+        padding: 0 2rem;
+    }
+    .lista__clientes{
+        display: flex;
+        flex-direction: column;
+    }
+    .cliente__pesquisa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+
+        padding: 1.471rem 0;
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        width: 76.125rem;
+    }
+    .container__info___cliente{
+        display: flex;
+        flex-direction: row;
+        gap: 7rem;
+        
+        padding-right: .5rem;
+    }
+    .container__valores___info{
+        display: flex;
+        gap: 7rem;
+    }
+    .input__check___cliente{
+        width: 1rem;
+        height: 1rem;
+    }
+    .secao-1__clientes-pesquisa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .container__check{
+        width: 8.75rem;
+    }
+    .cliente{
+        width: 17.938rem;
+    }
+    .cliente__duplicata{
+        width: 7.8rem;
+    }
+    .cliente__prestacao{
+        width: 7.8rem;
+    }
+    .cliente__valor{
+        width: 7.8rem;
+    }
+    .cliente__vencimento{
+        width: 24.688rem;
+    }
+    .container__botoes-marcar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    .botoes__marcador{
+        display: flex;
+        gap: 1rem;
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+    }
+    .botao__marcar, .botao__desmarca{
+        border: 1px solid #ECECEC;
+        border-radius: 64px;
+        height: 1.938rem;
+
+        padding: .5rem 1rem;
+        background-color: transparent;
+        color: var(--primary);
+    }
+    .botao__processar{
+        border: 1px solid #ECECEC;
+        border-radius: 64px;
+        height: 3.25rem;
+
+        padding: 1rem 2rem;
+        background-color: #93C83D;
+        color: #FFFFFF;
+        font-family: var(--mont-serrat);
+    }
+
+    
+}
+

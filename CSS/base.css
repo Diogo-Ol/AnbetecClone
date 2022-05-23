@@ -1,0 +1,146 @@
+:root{
+    --mont-serrat: 'Montserrat', sans-serif;
+    
+    --primary: #173A67;
+    --primary-support: #1A8EF9;
+    --secundary: #F5961E;
+    --terciary: #96C83C;
+}
+body a{
+    color: #FFFFFF;
+}
+body{
+    overflow-x: hidden;
+    
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.active{
+    opacity: 1;
+}
+
+
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+@keyframes animatetopFeedback {
+    0% {top: -100px; opacity: 0; display: block;}
+
+    10%{top: 10%; opacity: 1;}
+
+    100% { top:10%; opacity: 0; display: none;}
+}
+
+@keyframes animateLeft {
+    from {right: -70vw; opacity: 0}
+    to {right: 0; opacity: 1}
+}
+@keyframes animaIndicadores {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes animateLeftServiço {
+    from{
+        right: 0; opacity: 0;
+    }
+    to{
+        right: 100vw; opacity: 1;
+    }
+}
+
+/*--------------TOOLTIP--------------*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 9.313rem;
+    background-color: var(--primary);
+    color: #EAEAEA;
+    text-align: center;
+    padding: 0.625rem;
+    border-radius: 4px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: -15%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--mont-serrat);
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -113%;
+    left: 36%;
+    margin-left: -5px;
+    border-width: 1.682rem;
+    border-style: solid;
+    border-color: #173A67 transparent transparent transparent ;
+    border-radius: 3px;
+
+    transform:rotateX(180deg);
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  input[type=date] { 
+    padding-left: 2.3rem;
+
+    background-image: url("../Assets/icone-input-date.svg");
+
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: center;
+ }
+ input[type=date]:focus{
+    outline: 1px solid var(--primary-support);
+    text-overflow:ellipsis;
+ }
+
+
+/*-------------------------DOCUMENTAÇÃO DE VALIDAÇÃO--------------------------*/
+        /*---------------------LOGIN-------------------*/
+        .input-senha__erro{
+            color: #F5381E;
+
+            border: 1px solid #F5381E;
+
+
+            background-image: url("../Assets/Login/vetor-senha-invalido.svg");
+        }
+        .input-email__erro{
+            color: #F5381E;
+
+            border: 1px solid #F5381E;
+        }
+        .input-mensagem-erro__visivel{
+            visibility: visible;
+        }
+
+        .input-email-mensagem-erro__visivel{
+            visibility: visible;
+        }

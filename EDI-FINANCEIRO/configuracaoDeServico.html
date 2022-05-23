@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Configuracao-Servico/configuracaoServico.css">
+        <link rel="stylesheet" href="../CSS/Configuracao-Servico/configuracaoServicoPagamento.css">
+        <link rel="stylesheet" href="../CSS/Configuracao-Servico/configuracaoServicoExtrato.css">
+        <link rel="stylesheet" href="../CSS/Configuracao-Servico/configuracaoServicoDDA.css">
+        <link rel="stylesheet" href="../CSS/Configuracao-Servico/configuracaoServicoResponsivo.css">
+        <link href="../CSS/base.css" rel="stylesheet">
+        <link href="../CSS/reset.css" rel="stylesheet">
+        <link href="../CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Assets/Logo-favicon.png" type="image/x-icon">
+        <title>Configuração de Serviços | Anbetec</title>
+    </head>
+    
+    <body id="body">
+        <header class="cabecalho">
+            <a href="../home.html"><img src="../Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="../Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="../Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="../Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="../Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="conteudo">
+
+                <div class="intro__configuracao-servico">
+                    <p class="paginacao__configuracao-servico">
+                        <a href="../home.html" class="link-paginacao">Produtos</a>
+                        <a href="../edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                        <a href="./configuracaoDeServico.html" class="destaque__paginacao">Configuração de Serviços</a>
+                    </p>
+                </div>
+
+                <section class="secao__cabecalho___configuracao-servico">
+                    
+                    <div class="cabecalho__configuracao-servico">
+                            <button class="tablinks tab-cobranca" id="defaultOpen" onclick="openTab(event, 'cobranca')">Cobrança</button>
+                            <button class="tablinks tab-pagamento" onclick="openTab(event, 'pagamento')">Pagamento</button>
+                            <button class="tablinks tab-extrato" onclick="openTab(event, 'extrato')">Extrato</button>
+                            <button class="tablinks tab-dda" onclick="openTab(event, 'dda')">DDA</button>   
+                    </div>
+
+                </section>
+
+                <section class="secao__cobranca___configuracao tabcontent" id="cobranca">
+
+                    <button type="button" class="botao__configura___cobranca" id="botao__configura-cobranca">Configurar Cobrança</button>
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+
+    
+                                <p class="info__cobranca___filial">Filial</p>
+                                
+                                <p class="info__cobranca___banco">Banco</p>
+        
+                                <p class="info__cobranca___remessa">Remessa</p>
+
+                                <p class="info__cobranca___agrupados">Enviar agrupados</p>
+                                
+                                <p class="info__cobranca___integracao">Integração</p>
+                                
+                                <p class="info__cobranca___status">Status</p>
+    
+    
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    
+    
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    
+                    <div class="container__secao___configuracao-cobranca" id="configuracoes-cobranca">
+                        
+                        <section class="configuracoes-cobranca" >
+                            
+                            <div class="cabecalho__configuracao-cobranca">
+                                <h1 class="titulo__cabecalho__configuracao-cobranca">Incluir Configuração de Cobrança</h1>
+                                <button class="fecha__configuracoes-cobranca" id="botao__fecha___configuracoes-cobranca"></button>
+                            </div>
+
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-cobranca">Filial cabeçalho arquivo</label>
+                                    <select name="Filial" id="Filial" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Filial Filtro" class="label__input___configuracao-cobranca" >Filiais para filtro dos títulos</label>
+                                    <select name="Filial Filtro" id="Filial Filtro" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Cobrança" class="label__input___configuracao-cobranca" >Cobrança</label>
+                                    <select name="Cobrança" id="Cobrança" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">015 - FIL05-BANCO BRASIL-COB-...</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-cobranca" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">5006 - 5006-1-BCO BRASIL COB 88...</option>
+                                    </select>
+                                </div>
+
+
+
+                            </section>
+                            
+                            <div class="cabecalho__configuracao-servico">
+                                <button class="tablinks-configuracao-cobranca tab-remessa" id="defaultOpenCobranca" onclick="openTabCobrancaRemessa(event, 'remessa')">Remessa</button>
+                                <button class="tablinks-configuracao-cobranca tab-retorno" onclick="openTabCobrancaRemessa(event, 'retorno')">Retorno</button>
+                                <button class="tablinks-configuracao-cobranca tab-api" onclick="openTabCobrancaRemessa(event, 'api')">APIs</button>
+                            </div>
+
+                            <section class="secao__configuracao___remessa tabcontent-configuracao-cobranca" id="remessa">
+                                
+                                <h2 class="titulo__secao-configuracao___remessa">Filtros para Inclusão</h2>
+
+                                <section class="secao__inputs___configuracao-remessa">
+
+                                    <div class="container__input">
+                                        <label for="Restrição-Clientes" class="label__input___configuracao-cobranca">Restrição de Clientes</label>
+                                        <select name="Restrição-Clientes" id="Restrição-Clientes" class="input__cobranca___configuracao-remessa" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">Restrição de Clientes</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="Periodicidade-Envio" class="label__input___configuracao-cobranca">Periodicidade de envio</label>
+                                        <input name="Periodicidade-Envio" type="text" placeholder="60 min" class="input__periodicidade-remessa">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="Horario-Inicio-Envio" class="label__input___configuracao-cobranca">Horário do ínicio de envio</label>
+                                        <input name="Horario-Inicio-Envio" type="time" placeholder="08:00" class="input__horario-inicio-remessa">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="Horario-Fim-Envio" class="label__input___configuracao-cobranca">Horário do Fim de envio</label>
+                                        <input name="Horario-Fim-Envio" type="time" placeholder="20:00" class="input__horario-fim-remessa">
+                                    </div>
+
+                                </section>
+
+                                <h3 class="titulo__secao-configuracao___remessa">Filtros para Alteração</h3>
+                                
+                                <section class="primeira-secao__filtros-alteracao___configuracao-remessa">
+
+                                    <div class="container__input___horario-envio-alteracoes">
+                                        <label for="Horario-Envio-Alterações" class="label__input___configuracao-cobranca">Horário do envio de alterações de títulos:</label>
+                                        <input name="Horario-Envio-Alterações" type="time" placeholder="12:00" class="input__horario-envio-alteracoes"> 
+                                    </div>
+
+                                </section>
+
+                                <div class="container__segunda-secao___filtros-alteracao">
+                                    
+                                    <section class="segunda-secao__filtros-alteracao___configuracao-remessa">
+
+                                        <h4 class="subtitulo__secao-configuracao___remessa">Range para títulos prorrogados</h4>
+    
+                                        <div class="container__input___titulos-prorrogados">
+                                            
+                                            <label for="Retroagir-Dias" class="label__input___configuracao-cobranca">Retroagir Dias:</label>
+                                            <input name="Retroagir-Dias" type="text" placeholder="0 dias" class="input__titulos-prorrogados">
+    
+                                            <label for="Avançar-Dias" class="label__input___configuracao-cobranca">Avançar Dias:</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="0 dias" class="input__titulos-prorrogados input__titulo-remessa-maior">
+                                        
+                                        </div>
+
+                                        <section class="container__input___titulos-prorrogados-radio">
+                                            
+                                            <div class="secao__inputs-radio">
+
+                                                <label for="Integração" class="label__input-radio">Integração:</label>
+                                                <div class="container__input-radio">
+                                                    <input type="radio" name="Integração" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">CNAB</span>
+                                                    <input type="radio" name="Integração" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">API</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="secao__inputs-radio">
+
+                                                <label for="Integração-Ativa" class="label__input-radio">Integração Ativa (CNAB e API):</label>
+                                                <div class="container__input-radio">
+                                                    <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">Ativa</span>
+                                                    <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">Não Ativa</span>
+                                                </div>
+
+                                            </div>
+                                        
+                                        </section>
+    
+                                    </section>
+
+                                    <img src="../Assets/seta-remessa-configuracao.png" alt="Seta Remessa Configuração" class="seta__remessa-configuracao">
+
+                                    <section class="segunda-secao__filtros-alteracao___configuracao-remessa">
+
+                                        <h4 class="subtitulo__secao-configuracao___remessa">Range para títulos abatidos</h4>
+    
+                                        <div class="container__input___titulos-abatidos">
+                                            
+                                            <label for="Retroagir-Dias" class="label__input___configuracao-cobranca">Retroagir Dias:</label>
+                                            <input name="Retroagir-Dias" type="text" placeholder="0 dias" class="input__titulos-abatidos">
+    
+                                            <label for="Avançar-Dias" class="label__input___configuracao-cobranca">Avançar Dias:</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="0 dias" class="input__titulos-abatidos input__titulo-remessa-maior">
+                                        
+                                        </div>
+
+                                        <section class="container__input___titulos-abatidos-radio">
+                                            
+                                            <div class="secao__inputs-radio">
+
+                                                <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                                <div class="container__input-radio">
+                                                    <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                    <span class="titulo__input-radio">Homologação</span>
+                                                    <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                    <span class="titulo__input-radio">Produção</span>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+    
+                                    </section>
+
+
+                                </div>
+
+                            </section>
+
+                            <section class="secao__configuracao___retorno tabcontent-configuracao-cobranca" id="retorno">
+
+                                <div class="container__input">
+                                    <label for="Moeda-Retorno" class="label__input___configuracao-cobranca">Moeda para baixa</label>
+                                    <select name="Moeda-Retorno" id="Moeda-Retorno" class="input__cobranca___configuracao-retorno" required>
+                                        <option class="option__filtro" value="0">Selecionar</option>
+                                        <option class="option__filtro" value="1">Real</option>
+                                        <option class="option__filtro" value="2">Euro</option>
+                                    </select>
+                                </div>
+
+
+                                <section class="container__input-toogle___retorno">
+
+                                    <div class="toggle toogle__low-opacity">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch " checked disabled >
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Permitir baixa de título pago a maior gerando a diferença como receita</span>
+                                    </div>
+
+                                    <div class="toggle toogle__low-opacity">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch" checked disabled >
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Gerar para o cliente crédito proveniente de título pagos a mais</span>
+                                    </div>
+
+                                    <div class="toggle toogle__low-opacity">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch" checked disabled >
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Permitir baixa de título Após o vencimento, Sem JUROS, ou com JUROS pagos a menor</span>
+                                    </div>
+
+                                    <div class="toggle">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Desbloquear cliente após baixa caso não tenha mais títulos vencidos</span>
+                                    </div>
+
+                                    <div class="toggle">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Bloquear clientes automaticamente caso tenham títulos vencidos</span>
+                                    </div>
+
+                                    <div class="toggle">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch"  id="input-abre-email-retorno">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Realizar a baixa de retorno automáticamente</span>
+                                    </div>
+                                
+                                </section>
+
+                                <div class="container__input-email___configuracao-retorno" id="container-input-email-retorno">
+                                    <input type="email" class="input-email__configuracao-retorno" placeholder="Inserir e-mail para o recebimento do relatório de baixa" required>
+                                </div>
+
+                                <section class="container__accordion-contas-vinculadas">
+                                    <button class="accordion">Contas Vinculadas</button>
+                                      
+                                    <div class="panel">
+                                        
+                                        <div class="container__input-panel___vincular">
+                                            <div class="container__input">
+                                                <label for="Agência" class="label__input___configuracao-cobranca">Agência</label>
+                                                <input type="number"name="Agência" class="input__agencia-panel___vincular" placeholder="Ex: 0123">
+                                            </div>
+
+                                            <div class="container__input">
+                                                <label for="Conta" class="label__input___configuracao-cobranca">Conta</label>
+                                                <input type="number" name="Conta" class="input__conta-panel___vincular" placeholder="Ex: 00012345-6">
+                                            </div>
+                                            
+                                            <button class="botao__vincular-conta" id="botao-vincula-conta-retorno">Vincular Conta</button>
+
+                                        </div>
+
+                                        <section class="secao__contas-vinculadas" id="secao-contas-vinculadas">
+
+                                            <section class="info__contas-vinculadas">
+
+                                                <p class="info__agencia-retorno">Agência</p>
+                                                <p class="info__conta-retorno">Conta</p>
+
+                                            </section>
+
+                                            <ul class="lista__contas-vinculadas">
+
+                                                <li class="item__lista___conta-vinculadas">
+
+                                                    <p class="item__agencia-vinculada">0123</p>
+                                                        
+                                                    <p class="item__conta-vinculada">00012345-6</p>
+
+                                                    <button type="button" class="menu-dots"></button>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </section>
+
+                                    </div>
+                                
+                                </section>
+
+                            </section>
+
+                            <section class="secao__configuracao___api tabcontent-configuracao-cobranca" id="api">
+
+                                <div class="cabecalho__configuracao-servico">
+                                    <button class="tablinks-configuracao-cobranca-api tab-remessa" id="defaultOpenCobranca-api" onclick="openTabCobrancaApi(event, 'bradesco')">BRADESCO</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-retorno" onclick="openTabCobrancaApi(event, 'itau')">ITAU</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-api" onclick="openTabCobrancaApi(event, 'safra')">SAFRA</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-api" onclick="openTabCobrancaApi(event, 'banco-brasil')">BANCO DO BRASIL</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-api" onclick="openTabCobrancaApi(event, 'santander')">SANTANDER</button>
+                                </div>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="bradesco">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="itau">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="safra">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="banco-brasil">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="santander">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                            </section>
+
+                            <section class="secao__toogle___configuracao-remessa">
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Apenas títulos com Carga Fechada / Caixa Fechado</span>
+                                </div>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-remessa">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber arquivos de remessa e retorno quando forem gerados</span>
+                                </div>
+
+                            </section>
+
+                            <div class="container__input-email___configuracao-remessa" id="container-input-email-remessa">
+                                <input type="email" class="input-email__configuracao-remessa" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
+
+                            <div class="container__botao-adiciona__remessa">
+                                <button type="button" class="botao__adiciona-configuracao___remessa">Adicionar Configuração de Cobrança</button>
+                            </div>
+                        
+                        </section>
+                    
+                    </div>
+                </section>
+                
+                <section class="secao__cobranca___configuracao tabcontent" id="pagamento">
+
+                    <button type="button" class="botao__configura___pagamento" id="botao__configura-pagamento">Configurar Pagamento</button>
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+
+                                <p class="info__cobranca___filial-pagamento">Filial</p>
+                                
+                                <p class="info__cobranca___banco-pagamento">Banco</p>
+                                
+                                <p class="info__cobranca___hora">Hora de ínicio</p>
+                                
+                                <p class="info__cobranca___periodicidade">Periodicidade Envio</p>
+                                
+                                <p class="info__cobranca___integracao-pagamento">Integração</p>
+                                
+                                <p class="info__cobranca___status-pagamento">Status</p>
+    
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-pagamento">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-pagamento">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__hora">08:00 - 20:02</p>
+    
+                                        <p class="cliente__periodicidade">SIM</p>
+    
+                                        <p class="cliente__integracao-pagamento">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+    
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    <div class="container__secao___configuracao-pagamento" id="configuracoes-pagamento">
+                        
+                        <section class="configuracoes-pagamento">
+                            
+                            <div class="cabecalho__configuracao-pagamento">
+                                <h1 class="titulo__cabecalho__configuracao-pagamento">Incluir Configuração de Pagamento</h1>
+                                <button class="fecha__configuracoes-pagamento" id="botao__fecha___configuracoes-pagamento"></button>
+                            </div>
+
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-pagamento">Filial cabeçalho arquivo</label>
+                                    <select name="Filial" id="Filial" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Filial Filtro" class="label__input___configuracao-pagamento" >Filiais para filtro dos títulos</label>
+                                    <select name="Filial Filtro" id="Filial Filtro" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Cobrança" class="label__input___configuracao-pagamento" >Cobrança</label>
+                                    <select name="Cobrança" id="Cobrança" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">015 - FIL05-BANCO BRASIL-COB-...</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-pagamento" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">5006 - 5006-1-BCO BRASIL COB 88...</option>
+                                    </select>
+                                </div>
+
+                            </section>
+
+                            <div class="container__secao___filtros-pagamento">
+                                    
+                                <section class="secao__filtros___configuracao-pagamento">
+
+                                    <div class="container__input___pagamento">
+                                        
+                                        <div class="container__input">
+                                            <label for="Hora-Inicio-Envio" class="label__input___configuracao-pagamento">Hora inicio do envio:</label>
+                                            <input name="Hora-Inicio-Envio" type="time" placeholder="0 dias" class="input__pagamento-hora">
+                                        </div>
+                                        
+                                        <div class="container__input">
+                                            <label for="Avançar-Dias" class="label__input___configuracao-pagamento">Periodicidade de envio</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="60 min" class="input__pagamento-hora input__titulo-remessa-maior">
+                                        </div>
+                                    
+                                    </div>
+
+                                    <section class="container__input___radio">
+                                        
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Integração" class="label__input-radio">Integração:</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">CNAB</span>
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">API</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Integração-Ativa" class="label__input-radio">Integração (CNAB e API):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Ativa</span>
+                                                <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Não Ativa</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </section>
+
+                                </section>
+
+                                <img src="../Assets/seta-remessa-configuracao.png" alt="Seta Pagamento Configuração" class="seta__remessa-configuracao">
+
+                                <section class="secao__filtros___configuracao-pagamento">
+
+                                    <div class="container__input___pagamento">
+                                        
+                                        <div class="container__input">
+                                            <label for="Retroagir-Dias" class="label__input___configuracao-cobranca">Hora fim do envio:</label>
+                                            <input name="Retroagir-Dias" type="time" placeholder="0 dias" class="input__pagamento-hora">
+                                        </div>
+                                        
+                                        <div class="container__input">
+                                            <label for="Avançar-Dias" class="label__input___configuracao-cobranca">Tempo para buscar retorno</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="20 min" class="input__pagamento-hora input__titulo-remessa-maior">
+                                        </div>
+                                        
+                                    
+                                    </div>
+
+                                    <section class="container__input___radio">
+                                        
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Homologação</span>
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Produção</span>
+                                            </div>
+
+                                        </div>
+
+                                    </section>
+
+                                </section>
+
+
+                            </div>
+
+                            <section class="secao__toogle___configuracao-pagamento">
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-pagamento">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber, ao gerar, arquivos de remessa e retorno</span>
+                                </div>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Transmitir automáticamente para o banco após a assinatura do borderô</span>
+                                </div>
+
+                            </section>
+
+                            <div class="container__input-email___configuracao-pagamento" id="container-input-email-pagamento">
+                                <input type="email" class="input-email__configuracao-pagamento" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
+
+                            <div class="container__botao-adiciona__pagamento">
+                                <button type="button" class="botao__adiciona-configuracao___pagamento">Adicionar Configuração de Pagamento</button>
+                            </div>
+                        
+                        </section>
+                    
+                    </div>
+
+                    
+
+                </section>
+
+                <section class="secao__cobranca___configuracao tabcontent" id="extrato">
+
+                    <button type="button" class="botao__configura___extrato" id="botao__configura-extrato">Configurar Extrato</button>
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+                                
+                            <p class="info__cobranca___filial-extrato">Filial</p>
+                                
+                            <p class="info__cobranca___banco-extrato">Banco</p>
+                                
+                            <p class="info__cobranca___moeda">Moeda</p>
+                                
+                            <p class="info__cobranca___inicio">Ínicio Retorno</p>
+                                
+                            <p class="info__cobranca___fim">Fim Retorno</p>
+                                
+                            <p class="info__cobranca___status-extrato">Status</p>
+                        
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                
+    
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    <div class="container__secao___configuracao-extrato" id="configuracoes-extrato">
+                        
+                        <section class="configuracoes-extrato">
+                            
+                            <div class="cabecalho__configuracao-extrato">
+                                <h1 class="titulo__cabecalho__configuracao-extrato">Incluir Configuração de Extrato</h1>
+                                <button class="fecha__configuracoes-extrato" id="botao__fecha___configuracoes-extrato"></button>
+                            </div>
+
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-extrato">Filial</label>
+                                    <select name="Filial" id="Filial" class="input__extrato" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-extrato" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__extrato" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">5006 - 5006-1-BCO BRASIL COB 88...</option>
+                                    </select>
+                                </div>
+
+                            </section>
+
+                            <div class="container__secao___filtros-extrato">
+                                    
+                                <section class="secao__filtros___configuracao-extrato">
+
+                                    <section class="secao__inputs-extrato">
+
+                                        <div class="container__input">
+                                            <label for="Moeda-Retorno" class="label__input___configuracao-extrato">Moeda</label>
+                                            <select name="Moeda-Retorno" id="Moeda-Retorno" class="input__extrato___configuracao-moeda" required>
+                                                <option class="option__filtro" value="0">Selecionar</option>
+                                                <option class="option__filtro" value="1">Real</option>
+                                                <option class="option__filtro" value="2">Euro</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="container__input___extrato">
+                                        
+                                            <div class="container__input">
+                                                <label for="Hora-Inicio-Envio" class="label__input___configuracao-extrato">Hora ínicio do retorno</label>
+                                                <input name="Hora-Inicio-Envio" type="time" placeholder="08:00" class="input__extrato-hora">
+                                            </div>
+                                            
+                                            <div class="container__input">
+                                                <label for="Hora-Fim-Envio" class="label__input___configuracao-extrato">Hora fim do retorno</label>
+                                                <input name="Hora-Fim-Envio" type="time" placeholder="20:00" class="input__extrato-hora input__titulo-remessa-maior">
+                                            </div>
+                                        
+                                        </div>
+    
+                                    </section>
+
+
+                                    <section class="container__input___radio">
+                                        
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Integração" class="label__input-radio">Integração (CNAB e API):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Ativa</span>
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Não Ativa</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Homologação</span>
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Produção</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </section>
+
+                                </section>
+
+                            </div>
+
+                            <section class="secao__toogle___configuracao-extrato">
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-extrato">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber, ao gerar, arquivos de remessa e retorno</span>
+                                </div>
+
+                            </section>
+
+                            <div class="container__input-email___configuracao-extrato" id="container-input-email-extrato">
+                                <input type="email" class="input-email__configuracao-extrato" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
+
+                            <div class="container__botao-adiciona__extrato">
+                                <button type="button" class="botao__adiciona-configuracao___extrato">Adicionar Configuração de Extrato</button>
+                            </div>
+                        
+                        </section>
+                    
+                    </div>
+
+
+                    
+
+                </section>
+
+                <section class="secao__cobranca___configuracao tabcontent" id="dda">
+
+                    <button type="button" class="botao__configura___dda" id="botao__configura-dda">Configurar DDA</button>
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+                                
+                            <p class="info__cobranca___filial-dda">Filial</p>
+                                
+                            <p class="info__cobranca___banco-dda">Banco</p>
+                                
+                            <p class="info__cobranca___validacao">Tipo de Validação</p>
+                                
+                            <p class="info__cobranca___integracao-dda">Integração</p>
+                                
+                            <p class="info__cobranca___status-dda">Status</p>
+                        
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    <div class="container__secao___configuracao-dda" id="configuracoes-dda">
+                        
+                        <section class="configuracoes-dda">
+                            
+                            <div class="cabecalho__configuracao-dda">
+                                <h1 class="titulo__cabecalho__configuracao-dda">Incluir Configuração de DDA</h1>
+                                <button class="fecha__configuracoes-dda" id="botao__fecha___configuracoes-dda"></button>
+                            </div>
+
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-dda" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__dda" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">10 - 10-10-CAIXINHA - OESA</option>
+                                    </select>
+                                </div>
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-dda">Filial</label>
+                                    <select name="Filial" id="Filial" class="input__dda" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+
+                                <div class="toggle toggle-dda">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Configurar manualmente</span>
+                                </div>
+                        
+                                <section class="secao__filtros___configuracao-dda">
+
+                                    <section class="secao__inputs-dda">
+
+                                        <div class="container__input">
+                                            <label for="Dias-Validação" class="label__input___configuracao-dda">Dias da semana para validação Arquivo DDA</label>
+                                            <select name="Dias-Validação" id="dias-validacao" class="input__dda___configuracao-validacao" required>
+                                                <option class="option__filtro" value="0">Selecionar</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="container__input___dda">
+                                        
+                                            <div class="container__input">
+                                                <label for="Hora-Execução" class="label__input___configuracao-dda">Horário de execução</label>
+                                                <input name="Hora-Execução" type="time" placeholder="08:00" class="input__dda-hora">
+                                            </div>
+                                
+                                        </div>
+    
+                                    </section>
+
+
+                                    <section class="container__input___radio-dda">
+
+                                        <div class="secao__inputs-radio toogle__low-opacity">
+
+                                            <label for="Integração-DDA" class="label__input-radio">Integração:</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração-DDA" class="input-radio__integracao" checked readonly>
+                                                <span class="titulo__input-radio">CNAB</span>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="secao__inputs-radio" id="toggle-margin-right__extrato">
+
+                                            <label for="Integração" class="label__input-radio">Integração (CNAB e API):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Ativa</span>
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Não Ativa</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Homologação</span>
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Produção</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </section>
+
+                                </section>
+
+                            </section>
+
+                            <div class="container__secao___validacao-dda">
+                                
+                                <h2 class="titulo__secao-validacao">Tipos de Validação:</h2>
+                                
+                                <div class="container__input">
+
+                                    <label for="Tipo-Validacao" class="label__input___configuracao-dda" >Validações</label>
+                                    <select name="Tipo-Validacao" id="Tipo-Validacao" class="input__dda___validacao" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">Validar CNPJ da Filial (Sacado)</option>
+                                        <option class="option__filtro" value="1">Validar CNPJ do Fornecedor Principal (Cedente)</option>
+                                        <option class="option__filtro" value="1">Validar Valor Bruto</option>
+                                    </select>
+                                    
+                                </div>
+
+                            </div>
+
+                            <section class="secao__toogle___configuracao-dda">
+
+                                <div class="toggle toggle-dda-validacao">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-dda">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber, ao gerar, arquivos de remessa e retorno</span>
+                                </div>
+
+                            </section>
+
+                            <div class="container__input-email___configuracao-dda" id="container-input-email-dda">
+                                <input type="email" class="input-email__configuracao-dda" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
+
+                            <div class="container__input">
+
+                                <label for="Prazo-Exclusao" class="label__input___configuracao-dda">Prazo para exclusão do DDA inconcistente:</label>
+                                <input type="text" name="Prazo-Exclusao" class="input__configuracao-dda___prazo-exclusao" placeholder="20 dias">
+                                
+                            </div>
+
+                            <div class="container__botao-adiciona__dda">
+                                <button type="button" class="botao__adiciona-configuracao___dda">Adicionar Configuração de DDA</button>
+                            </div>
+                        
+                        </section>
+                    
+                    </div>
+
+
+                    
+
+                </section>
+
+
+        </main>
+    
+    <script src="../Componentes/tab.js" type="text/javascript"></script>
+    <script src="../Componentes/ConfiguracoesServico/tab-configuracao-cobranca.js" type="text/javascript"></script>
+    <script src="../Componentes/Modules/moduleProcessamentos.js" type="module"></script>
+    <script src="../Componentes/ConfiguracoesServico/accordion-retorno.js" type="text/javascript"></script>
+    <script src="../Componentes/ConfiguracoesServico/tab-configuracao-api.js" type="text/javascript"></script>
+    </body>
+    
+</html>

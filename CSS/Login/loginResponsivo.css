@@ -1,0 +1,148 @@
+@media (max-width:1024px){ /*Responsivo Mobile*/
+    .intro{
+        display: none;
+    }
+    .login{
+        width: 100vw;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    .logo-anbetec{
+        margin-top: 1.625rem;
+        margin-left: 0%;
+        margin-bottom: .5rem;
+    }
+    .titulo__login-area{
+        font-size: 2rem;
+        margin-bottom: .4rem;
+    }
+    .descricao__login-area{
+        font-size: .8rem;
+        margin-top: 0%;
+    }
+    .input-email,
+    .input-senha{
+        width: 21.436rem;
+        height: 2.654rem;
+        background-position-y: .65rem;
+    }
+    .label-email, .label-senha {
+        margin-bottom: .1rem;
+    }
+    .input-senha{
+        margin-bottom: .5rem;
+    }
+    .mostra-senha{
+        left: 19.5rem;
+        top: -3.1rem;
+    }
+    .input-botao{
+        width: 21.436rem;
+        height: 2.883rem;
+    }
+    .toggle{
+        margin-bottom: 1.949rem;
+    }
+    .switch{
+        width: 1.923rem;
+        height: 0.691rem;
+    }
+    .slider:before{
+        width: 1.134rem;
+        height: 1.085rem;
+        bottom: -.1rem;
+    }
+    .esqueceu-senha{
+        font-size: .8rem;
+    }
+    .redes-sociais{
+        flex-direction: row;
+        margin-bottom: 1rem;
+        margin-top: 4.063rem;
+        margin-left: 70%;
+        width: 100vw;
+    }
+    .titulo__redes-sociais{
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .links__redes-sociais{
+        justify-content: space-around;
+    }
+    .container__redes-sociais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatsapp{
+        margin-right: 1rem;
+        margin-left: 2.4rem;
+        width: 3.938rem;
+        height: 3.938rem;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1439px){
+    .intro{
+        display: none;
+        justify-content: space-around;
+    }
+    .login{
+        width: 100vw;
+        align-items: center;
+    }
+    .login-area{
+        width: 80vw;
+        padding: 0 20vw;
+    }
+    .input-senha, .input-email{
+        width: 40vw;
+    }
+    .input-botao{
+        width: 40vw;
+    }
+    .logo-anbetec{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .redes-sociais{
+        width: 20vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .whatsapp{
+        margin-left: 5rem;
+        align-self: flex-end;
+    }
+    .mostra-senha{
+        left: 93%;
+    }
+}
+
+@media (min-width:1520px){
+    .vector-borda{
+        left: 29.43%;
+    }
+    .imagem-circuferencia{
+        position: relative;
+        left: -1.9vw;
+    }
+    .container__limite-automatico{
+        left: 6.5vw;
+    }
+    .icone-1{
+        left: 13vw;
+    }
+    .icone-2{
+        left: 32vw;
+    }
+    .icone-3{
+        left: 34vw;
+    }
+    .elipse-laranja{
+        left: 28vw;
+    }
+    .texto__intro{
+        left: 7.5vw;
+    }
+}

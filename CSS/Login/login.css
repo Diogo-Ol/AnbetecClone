@@ -1,0 +1,489 @@
+@media (min-width:0px) {
+    .conteudo {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+    .vector-preenchido {
+        position: absolute;
+        top: 1.2rem;
+        left: 0%;
+    }
+    .vector-borda {
+        position: absolute;
+        bottom: -11%;
+        right: 48.061rem;
+    }
+    .info_intro{
+        height: 100%;
+        padding-top: 15%;
+        padding-bottom: 20%;
+    }
+    .imagem-circuferencia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 319px;
+        left: 9%;
+        margin-top: 4rem;
+    }
+    .texto__intro {
+        position: absolute;
+        left: 5rem;
+        top: 1rem;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .titulo__intro {
+        color: var(--primary);
+        width: 35.813rem;
+        height: 7.75rem;
+        font-size: 3.563rem;
+        font-weight: 800;
+        font-family: var(--mont-serrat);
+        letter-spacing: 0.019rem;
+        text-align: center;
+        line-height: 3.875rem;
+        margin-bottom: 0%;
+    }
+    .destaque__green{
+        color: #93C83D;
+    }
+    .descricao__intro {
+        color: var(--primary);
+        font-size: 18px;
+        font-family: var(--mont-serrat);
+        font-weight: 400;
+        letter-spacing: 0.013rem;
+        text-align: center;
+        margin-top: 0rem;
+    }
+    .destaque__titulo {
+        color: var(--primary-support);
+    }
+    .vetor-direita{
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .container__edi-financeiro{
+        position: absolute;
+        top: 363px;
+        bottom: 66%;
+        left: 17.5%;
+    }
+    .edi-financeiro {
+        background: #FFFFFF;
+        background-image: url("../../Assets/Login/Finance.png");
+    }
+    .container__cobranca{
+        position: absolute;
+        top: 706px;
+        bottom: auto;
+        left: 18%;
+        z-index: 3;
+    }
+    .cobranca {
+        background: #FFFFFF;
+        background-image: url("../../Assets/Login/cobrança.svg");
+    }
+    .container__limite-automatico{
+        position: absolute;
+        top: 523px;
+        bottom: auto;
+        left: 2%;
+    }
+    .limite-automatico {
+        background: #FFFFFF;
+        background-image: url("../../Assets/Login/limiteAutomatico.svg");
+    }
+    .container__titulos-gerados{
+        position: absolute;
+        top: 523px;
+        bottom: auto;
+        left: 31%;
+    }
+    .titulos-gerados {
+        background: #FFFFFF;
+        background-image: url("../../Assets/Login/titulosGerados.svg");
+    }
+    .icone-1 {
+        position: absolute;
+        top: 447px;
+        bottom: auto;
+        left: 12.3%;
+        border-radius: 50%;
+        border: 2px solid #C4C4C4;
+    }
+    .icone-2 {
+        position: absolute;
+        top: 656px;
+        bottom: auto;
+        left: 37.5%;
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 50%;
+        border: 2px solid #C4C4C4;
+        z-index: 10;
+    }
+    .icone-3 {
+        position: absolute;
+        top: 395px;
+        bottom: auto;
+        left: 39%;
+    }
+    .elipse-laranja{
+        position: absolute;
+        top: 767px;
+        bottom: auto;
+        left: 30.2%;
+        z-index: 1;
+    }
+    .dados{
+        position: absolute;
+        top: 706px;
+        bottom: auto;
+        left: 7%;
+    }
+    .intro {
+        width: 50vw;
+        height: 64rem;
+        background-color: #F8FBFF;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 3.5rem;
+
+        padding-bottom: 3.693rem;
+    }
+    .login {
+        width: 50vw;
+        height: 64rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .login-area{
+        margin-bottom: 3rem;
+    }
+    .logo-anbetec {
+        width: 8rem;
+        height: 2.625rem;
+        align-self: flex-start;
+        margin-bottom: 5.188rem;
+        margin-top: 4rem;
+    }
+    .titulo__login-area {
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+    .descricao__login-area {
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+    }
+    .form__login-area {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--mont-serrat);
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-email,
+    .input-senha {
+        width: 26.25rem;
+        height: 51.65px;
+        padding: 1rem 3rem;
+        color: #7A8594;
+        border: 1px solid #ECECEC;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+        margin-top: .2rem;
+    }
+    .input-email {
+        background-image: url("../../Assets/Login/iconeAvatar.png");
+        background-repeat: no-repeat;
+        background-position-y: 1rem;
+        background-position-x: 1rem;
+
+        margin-bottom: 0%;
+    }
+    .input-senha {
+        background-image: url("../../Assets/Login/VectorSenha.png");
+        background-repeat: no-repeat;
+        background-position-y: 1rem;
+        background-position-x: 1rem;
+        z-index: 1;
+
+        margin-bottom: 0%;
+    }
+    .input-email:focus {
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+        font-weight: 500;
+    }
+    .input-senha:focus {
+        outline: 2px solid var(--primary-support);
+        color: var(--primary-support);
+        font-weight: 500;
+    }
+    .label-email,
+    .label-senha {
+        color: var(--primary);
+        font-weight: 500;
+        margin-bottom: .25rem;
+    }
+    .mostra-senha{
+        background-image: url("../../Assets/Login/vetor-senha.png");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 1.313rem;
+        height: 0.938rem;
+        border: none;
+        z-index: 10;
+        position: relative;
+        top: -3rem;
+        left: 24rem;
+    }
+    .toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--primary);
+        font-weight: 600;
+        margin-bottom: 2.492rem;
+        font-size: 0.875rem;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+        margin-right: .5rem;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        height: 0.846rem
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.625rem;
+        width: 1.625rem;
+        left: -0.063rem;
+        bottom: -0.313rem;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+        box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
+    }
+    input:checked+.slider {
+        background-color: var(--primary-support);
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px var(--primary-support);
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(1.125rem);
+        -ms-transform: translateX(1.125rem);
+        transform: translateX(1.125rem);
+    }
+    .toggle-switch:checked+.input-botao {
+        background-color: var(--primary);
+    }
+    .slider.round {
+        border-radius: 2.125rem;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    .input-botao {
+        width: 26.25rem;
+        padding: 1rem 2rem;
+        background-color: var(--primary-support);
+        border-radius: 4rem;
+        border: none;
+        color: white;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+    }
+    .esqueceu-senha {
+        align-self: center;
+        margin-top: 1rem;
+        color: var(--primary-support);
+        text-decoration: underline;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+    }
+    .redes-sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        margin-top: .1rem;
+    }
+    .titulo__redes-sociais {
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        font-size: 12px;
+        margin-bottom: 1.5rem;
+    }
+    .links__redes-sociais {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 9rem;
+    }
+    .container__redes-sociais{
+        text-align: center;
+    }
+    .whatsapp{
+        display: flex;
+        align-self: flex-end;
+        margin-right: 4.466rem;
+    }
+    .input-email-mensagem-erro{
+        display: block;
+        visibility: hidden;
+        align-self: flex-end;
+
+        font-family: var(--mont-serrat);
+        font-size: 12px;
+
+        color: #F5381E;
+    }
+    .input-mensagem-erro {
+        display: block;
+        visibility: hidden;
+        align-self: flex-end;
+
+        font-family: var(--mont-serrat);
+        font-size: 12px;
+
+        color: #F5381E;
+    }
+    .secao__tecnologias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 45vw;
+    }
+    .botao__carrousel___tecnologia{
+        border: none;
+        background-color: transparent;
+    }
+    .container__tecnologias-login{
+        width: 40vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .lista__tecnologias{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        transition: all .5s ease-in-out;
+    }
+    .item__lista___tecnologias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        width: 40vw;
+    }
+    .titulo__item___lista{
+        font-family: var(--mont-serrat);
+        font-weight: 700;
+        color: #292A2C;
+
+        font-size: 16px;
+
+        width: 40vw;
+    }
+    .descricao__item___lista{
+        font-family: var(--mont-serrat);
+        font-weight: 700;
+        color: #A3A3A3;
+
+        font-size: 12px;
+        line-height: 18px;
+
+        width: 15.063rem;
+    }
+    .secao__topicos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: 45vw;
+
+        margin-top: 2.313rem;
+
+        z-index: 20;
+    }
+    .lista__topicos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 29.813rem;
+        
+        flex-wrap: wrap;
+        
+        column-gap: 6rem;
+        row-gap: 3.5rem;
+    }
+    .item__lista___topicos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+
+    }
+    .titulo__item___topicos{
+        font-family: var(--mont-serrat);
+        font-weight: 700;
+        color: #292A2C;
+
+        font-size: 16px;
+    }
+    .secao__parceiros{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.313rem;
+
+        z-index: 20;
+    }
+}

@@ -1,0 +1,1339 @@
+@media (min-width:0px){
+    body{
+        background-color: #F8FBFF;
+    }
+    /*-------------------------CABECALHO--------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 6.938rem;
+        width: 100vw;
+
+        background-color: #FFFFFF;
+
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 42vw;
+        height: 3.25rem;
+
+        border: none;
+        border-radius: .5rem;
+
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+
+        padding: 1rem 0 1rem 3.5rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.25rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+    }
+    /*-------------------------paginação-DDA---------------------------*/
+    .intro__configuracao-servico{
+        font-family: var(--mont-serrat);
+        margin-bottom: 2rem;
+
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 3.438rem;
+    }
+    .paginacao__configuracao-servico{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+    
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-edi{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+    
+        color: var(--primary);
+        font-weight: 600;
+    }
+    /*-------------------------CABECALHO-TABS---------------------------*/
+    .secao__cabecalho___configuracao-servico{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-left: 2.9rem;
+        padding-top: 1rem;
+        padding-right: 3.438rem;
+    }
+    
+    .cabecalho__configuracao-servico{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 2.272rem;
+    }
+
+    .tablinks{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+
+    /*-------------------------SECAO--COBRANCA-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___cobranca, .botao__configura___pagamento, .botao__configura___extrato, .botao__configura___dda{
+        width: 16.733rem;
+        color: #FFFFFF;
+
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 2rem 1rem 3.733rem;
+
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+
+        background-position-y: center;
+        background-position-x: 15%;
+        
+
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        border-radius: 64px;
+
+        margin-bottom: 1.5rem;
+
+        border:none;
+
+        position: absolute;
+        left: calc(100% - 20rem);
+        top: 12.5rem;
+    }
+    .secao__cobranca___configuracao{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 1rem 0 1rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .info__cobranca___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 14px;
+
+        width: 80.75rem;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+    }
+
+    .container__info__cobranca-primeiro{
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .info__cobranca___filial{
+        width: 15.939rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 9rem;
+    }
+    .info__cobranca___banco{
+        width: 21.879rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+    }
+
+    .info__cobranca___remessa{
+        width: 10.351rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4.5rem;
+    }
+
+    .info__cobranca___agrupados{
+        width: 11.175rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 8.5rem;
+    }
+    .info__cobranca___integracao{
+        width: 9.587rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.3rem;
+    }
+    .info__cobranca___status{
+        width: 6.999rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+
+    }
+    /*-------------------------SECAO--COBRANCA-CLIENTES-CONFIGURACAO---------------------------*/
+    .container__cobranca{
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color: #173A67 #173A67;
+        scrollbar-width: thin;
+    }
+    .container__cobranca > p {
+        overflow-x: hidden;
+    }
+    .container__cobranca::-webkit-scrollbar-thumb {
+        background:#173A67;
+        border-radius: 16px;
+    }
+    .container__cobranca::-webkit-scrollbar{
+        background:transparent;
+        height: 0.555rem;
+        width: .5rem;
+    }
+    .lista__clientes___cobranca-configuracao{
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 1.8rem;
+        padding-right: 1.6rem;
+    }
+    .item__lista___cobranca-configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 77.106rem;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .cliente__filial{
+        width: 15.939rem;
+        font-size: 14px;
+    }
+    .cliente__banco{
+        width: 21.879rem;
+        font-size: 14px;
+    }
+    .cliente__remessa{
+        width: 10.351rem;
+        font-size: 14px;
+    }
+    .cliente__agrupado{
+        width: 11.175rem;
+        font-size: 14px;
+    }
+    .cliente__integracao{
+        width: 9.587rem;
+        font-size: 14px;
+    }
+    .botao__status___configuracao-ativa{
+        font-size: 14px;
+        font-weight: 500;
+
+        background: #DBFBCD;
+        border-radius: 18.8207px;
+        border: none;
+
+        color: #4ABE14;
+
+        padding: .2rem .9rem;
+
+        margin-right: 2.55rem;
+    }
+    .botao__status___configuracao-desativa{
+        background: #FFF2F2;
+        color: #F5381E;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        border-radius: 18.8207px;
+        border: none;
+
+        padding: .2rem .9rem;
+
+        margin-right: 1rem;
+    }
+    .paginacao__carrousel{
+        width: 6.528rem;
+
+        position: relative;
+        top: 0%;
+        left: 47%;
+
+        margin-top: 3rem;
+
+        font-family: var(--mont-serrat);
+        font-size: 15px;
+        color: #7A8594;
+
+        background-color: #FFFFFF;
+        z-index: 20000;
+    }
+    /*-------------------------SECAO--COBRANCA-BOTOES-CARROUSEL---------------------------*/
+    .button--carrousel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        position: relative;
+        top: -2rem;
+
+        padding: 0 2.6rem 0 1.8rem;
+
+    }
+    .carrousel__button{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+    /*-------------------------SECAO--PAGAMENTO-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___pagamento{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        padding-left: 2rem;
+        padding-right: 1rem;
+
+        background-position-x: 1.4rem;
+    }
+    .info__cobranca___filial-pagamento{
+        width: 15.939rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 2.5rem;
+    }
+    .info__cobranca___banco-pagamento{
+        width: 21.879rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+    }
+    .info__cobranca___hora{
+
+        width: 10.351rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 6.8rem;
+    }
+    .info__cobranca___periodicidade{
+        
+        width: 11.175rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 9.5rem;
+    }
+    .info__cobranca___integracao-pagamento{
+        width: 9.587rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.3rem;
+    }
+    .info__cobranca___status-pagamento{
+        width: 6.999rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+
+    }
+    .cliente__filial-pagamento{
+        width: 15.939rem;
+        font-size: 14px;
+    }
+    .cliente__banco-pagamento{
+        width: 21.879rem;
+        font-size: 14px;
+    }
+    .cliente__hora{
+        width: 10.351rem;
+        font-size: 14px;
+    }
+    .cliente__periodicidade{
+        width: 11.175rem;
+        font-size: 14px;
+    }
+    .cliente__integracao-pagamento{
+        width: 9.587rem;
+        font-size: 14px;
+    }
+    /*-------------------------SECAO--EXTRATO-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___extrato{
+        background-position-x: 2.9rem;
+    }
+    .info__cobranca___filial-extrato{
+        width: 15.8rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 2.5rem;
+    }
+    .info__cobranca___banco-extrato{
+        width: 21.3rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+    }
+    .info__cobranca___moeda{
+
+        width: 12.6rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.8rem;
+    }
+    .info__cobranca___inicio{
+        
+        width: 9.938rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 7rem;
+    }
+    .info__cobranca___fim{
+        width: 9.587rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 6.1rem;
+    }
+    .info__cobranca___status-extrato{
+        width: 6.999rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+
+    }
+    .cliente__filial-extrato{
+        width: 15.939rem;
+        font-size: 14px;
+    }
+    .cliente__banco-extrato{
+        width: 21.879rem;
+        font-size: 14px;
+    }
+    .cliente__moeda{
+        width: 12.75rem;
+        font-size: 14px;
+    }
+    .cliente__inicio{
+        width: 9.938rem;
+        font-size: 14px;
+    }
+    .cliente__fim{
+        width: 9.587rem;
+        font-size: 14px;
+    }
+    /*-------------------------SECAO--DDA-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___dda{
+        background-position-x: 3.5rem;
+    }
+    .info__cobranca___filial-dda{
+        width: 14.188rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 2.5rem;
+    }
+    .info__cobranca___banco-dda{
+        width: 17.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+    }
+    .info__cobranca___validacao{
+
+        width: 22.625rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 8.4rem;
+    }
+    .info__cobranca___integracao-dda{
+        width: 13.625rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.3rem;
+    }
+    .info__cobranca___status-dda{
+        width: 6.999rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+
+    }
+    
+    .cliente__filial-dda{
+        width: 14.188rem;
+        font-size: 14px;
+    }
+    .cliente__banco-dda{
+        width: 17.563rem;
+        font-size: 14px;
+    }
+    .container__cliente___validacao{
+        width: 22.688rem;
+        font-size: 14px;
+    }
+    .cliente__integracao-dda{
+        width: 13.438rem;
+        font-size: 14px;
+    }
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA---------------------*/
+
+    .container__secao___configuracao-cobranca{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+
+        padding: 46% 100vw;
+
+        display: none;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgba(0,0,0,0.2);
+
+        transition: all .4s ease-in-out;
+
+        z-index: 30000;
+    }
+    .configuracoes-cobranca{
+        width: 70vw;
+        height: 75.5rem;
+
+        display: block;
+
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+
+        margin-top: 5vh;
+        margin-bottom: 4vh;
+
+        padding: 3rem 3.438rem 2.5rem;
+
+        transition: all .4s ease-in-out;
+
+        background-color: #FFFFFF;
+        border-radius: 16px 0px 0px 16px;
+        border: 1px solid #F1F1F1;
+
+        animation: animateLeftServiço .4s ease-out forwards;
+
+        font-family: var(--mont-serrat);
+        z-index: 400000;
+    }
+
+    .cabecalho__configuracao-cobranca{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 1.5rem;
+    }
+    .titulo__cabecalho__configuracao-cobranca{
+        font-size: 20px;
+        color: var(--primary);
+    }
+    .fecha__configuracoes-cobranca{
+        width: 1rem;
+        height: 1rem;
+        background-image: url("../../Assets/icone-fecha.svg");
+        background-repeat: no-repeat;
+
+        border: none;
+        background-color: transparent;
+
+        padding: 0;
+    }
+    .container__input-configuracao{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        width: 56.438rem;
+        font-family: var(--mont-serrat);
+
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .label__input___configuracao-cobranca{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: var(--primary);
+    }
+    .input__cobranca{
+        height: 3.063rem;
+        width: 27.5rem;
+        
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__cobranca:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .tablinks-configuracao-cobranca{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .active-configuracao-cobranca{
+        opacity: 1;
+    }
+
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA-REMESSA--------------------*/
+    .secao__configuracao___remessa{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .titulo__secao-configuracao___remessa{
+        margin-bottom: 1.625rem;
+
+        font-size: 16px;
+        font-weight: 700;
+        font-family: var(--mont-serrat);
+        color: var(--primary);
+    }
+    .secao__inputs___configuracao-remessa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        margin-bottom: 3rem;
+    }
+    .input__cobranca___configuracao-remessa{
+        width: 24.25rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: calc(100% - 1rem);
+        background-position-y: 1.3rem;
+        border: 1px solid #333;
+        padding-right: 20px;
+    }
+    .input__cobranca___configuracao-remessa:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .input__periodicidade-remessa, .input__horario-inicio-remessa, .input__horario-fim-remessa{
+        width: 9.6rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__periodicidade-remessa:focus, .input__horario-inicio-remessa:focus, .input__horario-fim-remessa:focus, .input__cobranca___configuracao-retorno:focus, .input__conta-panel___vincular:focus, .input__agencia-panel___vincular:focus, .input-email__configuracao-retorno:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .primeira-secao__filtros-alteracao___configuracao-remessa{
+        margin-bottom: 3rem;
+    }
+    .container__input___horario-envio-alteracoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .input__horario-envio-alteracoes{
+        width: 10.125rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+
+    .container__segunda-secao___filtros-alteracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .segunda-secao__filtros-alteracao___configuracao-remessa{
+        display: flex;
+        flex-direction: column;
+
+        width: 27.326rem;
+    }
+    .subtitulo__secao-configuracao___remessa{
+        margin-bottom: 1.625rem;
+
+        font-size: 16px;
+        font-weight: 700;
+        font-family: var(--mont-serrat);
+        color: var(--primary);
+    }
+    .container__input___titulos-prorrogados, .container__input___titulos-abatidos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+
+        margin-bottom: 1.5rem;
+    }
+    .input__titulos-prorrogados, .input__titulos-abatidos{
+        width: 6.538rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__titulo-remessa-maior{
+        width: 7.038rem;
+    }
+    .container__input___titulos-prorrogados-radio, .container__input___titulos-abatidos-radio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .secao__inputs-radio{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+    .label__input-radio{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+        color: var(--primary);
+    }
+    .container__input-radio{
+        display: flex;
+        flex-direction: row;
+    }
+    .input-radio__integracao, .input-radio__ambiente{
+        margin-right: .75rem;
+
+        width: 1.188rem;
+        height: 1.188rem;
+
+        color: var(--primary-support);
+        background-color: #1A8EF9;
+    }
+    .titulo__input-radio{
+        margin-right: 1rem;
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    
+    .secao__toogle___configuracao-remessa{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        padding-top: 3rem;
+
+        margin-top: 4.484rem;
+
+        border-top: 1px solid #EEEEEE;
+    }
+    .toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--primary);
+        font-weight: 500;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+        margin-right: .5rem;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        height: 0.846rem
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.389rem;
+        width: 1.329rem;
+        left: -0.063rem;
+        bottom: -0.18rem;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+        box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
+    }
+    input:checked+.slider {
+        background-color: #DDEBF9;
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px var(--primary-support);
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(1.15rem);
+        -ms-transform: translateX(1.15rem);
+        transform: translateX(1.15rem);
+        background-color: var(--primary-support);
+    }
+    .toggle-switch:checked+.input-botao {
+        background-color: var(--primary);
+    }
+    .slider.round {
+        border-radius: 2.125rem;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    .container__input-email___configuracao-remessa{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .input-email__configuracao-remessa{
+        width: 56.438rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .container__botao-adiciona__remessa{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .botao__adiciona-configuracao___remessa{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 2rem 1rem 3.733rem;
+        margin-bottom: 3rem;
+        margin-top: 2.5rem;
+        
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 9%;
+        
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
+    }
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA-RETORNO--------------------*/
+    .secao__configuracao___retorno{
+        display: flex;
+        flex-direction: column;
+    }
+    .input__cobranca___configuracao-retorno{
+        width: 56.438rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .container__input-toogle___retorno{
+        margin-top: 1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 56.438rem;
+        height: 7.4rem;
+    }
+    .label__toogle-retorno{
+        width: 23.719rem;
+
+        font-size: 12px;
+    }
+    .switch-retorno{
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+        margin-right: .5rem;
+    }
+    .switch-retorno input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .toogle__low-opacity{
+        opacity: 0.5;
+    }
+    .container__input-email___configuracao-retorno{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        
+        justify-content: flex-end;
+    }
+    .input-email__configuracao-retorno{
+        width: 27.719rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding:1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    
+    .container__accordion-contas-vinculadas{
+        width: 56.438rem;
+
+
+        background-color: #FDFDFD;
+        border: 1px solid #E6E6E6;
+        border-radius: 16px;
+
+        margin-top: 1.5rem;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        width: 56.438rem;
+        padding: 1.5rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        
+        color: var(--primary);
+
+        background-color: transparent;
+        background: url("../../Assets/seta-botao-acordion.png") no-repeat;
+        background-position-x: calc(100% - 1.5rem);
+        background-position-y: center;
+        background-size: 0.813rem 0.375rem ;
+        border: none;
+        
+        outline: none;
+        text-align: left;
+        transition: 0.4s;
+    }
+    .ativa-accordion{
+        background-image: url("../../Assets/seta-botao-accordion-rotacionada.png");
+        background-repeat: no-repeat;
+    }
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over i
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding-left: 1.5rem;
+        background-color: #FDFDFD;
+        display: none;
+        overflow: hidden;
+    }
+    .container__input-panel___vincular{
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+        gap: 1rem;
+
+        margin-bottom: 1.5rem;
+    }
+    .input__agencia-panel___vincular, .input__conta-panel___vincular{
+        width: 19.531rem;
+
+        border: 1px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .botao__vincular-conta{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 1.5rem;
+
+        margin-left: 1.75rem;
+        
+        background: var(--primary-support);
+        
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
+    }
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+
+    .secao__contas-vinculadas{
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+
+        width: 40.188rem;
+
+        margin-bottom: 2rem;
+    }
+    .info__contas-vinculadas{
+        display: flex;
+        flex-direction: row;
+        
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: var(--primary);
+
+        border-bottom: 1px solid #ECECEC;
+
+        padding-bottom: 1rem;
+    }
+    .info__agencia-retorno{
+        width: 16.938rem;
+        margin: 0%;
+
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4.3rem;
+
+        padding-left: .5rem;
+    }
+    .info__conta-retorno{
+        width: 23.25rem;
+        margin: 0%;
+
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.5rem;
+
+        padding-left: .5rem;
+    }
+    .lista__contas-vinculadas{
+        display: flex;
+        flex-direction: column;
+    }
+    .item__lista___conta-vinculadas{
+        display: flex;
+        flex-direction: row;
+
+        font-size: 14px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: #7A8594;
+    }
+    .item__agencia-vinculada{
+        width: 16.938rem;
+        margin: 0%;
+
+        padding-left: .5rem;
+    }
+    .item__conta-vinculada{
+        width: 21.063rem;
+        margin: 0%;
+
+        padding-left: .5rem;
+    }
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA-RETORNO--------------------*/
+    .tablinks-configuracao-cobranca-api{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 14px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .secao__configuracao___api{
+        display: flex;
+        flex-direction: column;
+    }
+    .secao__inputs-api{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        width: 58.438rem;
+        height: 10.5rem;
+    }
+    .input__secao-api{
+        width: 27.719rem;
+
+        border: 1px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+}
