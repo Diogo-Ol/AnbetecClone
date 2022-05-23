@@ -3,6 +3,7 @@
         display: flex;
         flex-direction: row;
         height: auto;
+        align-items: stretch;
     }
     .vector-preenchido {
         position: absolute;
@@ -11,8 +12,14 @@
     }
     .vector-borda {
         position: absolute;
-        bottom: -11%;
+        top: 100%;
         right: 48.061rem;
+    }
+    .intro{
+        background-image: url("../../Assets/Login/VectorBordaVerde.svg");
+        background-repeat: no-repeat;
+        background-position-x: 80%;
+        background-position-y: bottom;
     }
     .info_intro{
         height: 100%;
@@ -151,7 +158,7 @@
     }
     .intro {
         width: 50vw;
-        height: 64rem;
+        height: auto;
         background-color: #F8FBFF;
 
         display: flex;
@@ -164,7 +171,7 @@
     }
     .login {
         width: 50vw;
-        height: 64rem;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
