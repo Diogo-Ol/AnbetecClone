@@ -487,10 +487,25 @@
     }
     .secao__parceiros{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.014rem;
+
+        z-index: 20;
+
+        background-color: #F8FBFF;
+    }
+    .titulo__secao___parceiros{
+        font-family: var(--mont-serrat);
+        font-weight: 700;
+        color: #1EAAE1;
+
+        font-size: 14px;
+    }
+    .container__logo-parceiros{
+        display: flex;
         flex-direction: row;
         align-items: center;
         gap: 2.313rem;
-
-        z-index: 20;
     }
 }
